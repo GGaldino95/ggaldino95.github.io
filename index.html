@@ -12,15 +12,21 @@
                 color:rgb(136, 139, 140);    
             }
 
-            h1 {
+            h1, h5 {
                 text-align: center;
             }
 
-            h5 {
-                text-align: center;
+            h2 {
+               color: rgb(195, 156, 80); 
             }
 
-            li {
+            img {
+                border: 3px solid rgb(195, 156, 80);
+                border-radius: 5%;
+                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+            
+            li, a {
                 color:rgb(176, 203, 212);
             }
 
@@ -38,6 +44,18 @@
             #gray {
                 color:rgb(136, 139, 140);  
             }
+
+            #keyword {
+                color:rgb(176, 203, 212);
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+            .centered {
+                display: block;
+                margin: 0 auto;
+                text-align: center;
+            }
         </style>
     </head>
     <body>
@@ -48,15 +66,17 @@
         </h5>
         <h1>Gabriel Galdino Nogueira</h1>
         
-        <img src="profile.jpg" alt="Minha foto de perfil" width="350px">
-        <h2>Salve!</h2>
-        <p id="about">
-            Podem me chamar de <em>Gal</em> ! <br> Sou Belorizontino (MG), com 25 anos bem vividos 
-            (eu acho), e desde moleque apaixonado por informática. <br> Me ingressei na faculdade de 
-            Ciência da Computação pela <strong>Universidade FUMEC</strong> em 2018, e agora com <br>
-            muita dedicação consegui entrar na <strong>TRYBE</strong>, e me faltam palavras pra 
+        <img class="centered" src="profile.jpg" alt="Minha foto de perfil" width="350px">
+        <h2 class="centered" id="about">Salve!</h2>
+        <p id="keyword">
+            Podem me chamar de <em>Gal</em> ! 
+        </p>
+        <p>
+            Sou <strong id="keyword">Belorizontino (MG)</strong>, com <strong id="keyword">25</strong> anos bem vividos <s>(eu acho)</s>, e desde moleque apaixonado por informática. <br>
+            Me ingressei na faculdade de Ciência da Computação pela <strong id="keyword">Universidade FUMEC</strong> em 2018, 
+            e agora com <br> muita dedicação consegui entrar na <strong class="trybe">TRYBE</strong>, e me faltam palavras pra 
             descrever essa sensação maravilhosa! <br>
-            Gosto de música e jogos, sendo um dos meus preferidos o World of Warcraft.
+            Gosto de música e jogos, sendo um dos meus preferidos o <strong id="keyword" style="color: rgb(195, 156, 80);"> World of Warcraft</strong>.
         </p>
         
         <div class="box">
@@ -68,8 +88,8 @@
                 <li>Linguagem C</li>
                 <li>Manutenção geral em computadores</li>
             </ul>
-        </div>
-        <h2>Me segue lá:</h2>
+        </div><br><br>
+        <h3>Me segue lá:</h3>
         <p id="follow">
             <em>
                 <a href="https://github.com/GGaldino95" target="_blank">GitHub</a> --
@@ -77,6 +97,9 @@
             </em>
         </p>
         <br><br>
-        <h3>#VQV! #TRYBE</h3>
+        <h3>
+            #<strong class="trybe">V</strong>Q<strong class="trybe">V</strong>! 
+            #<strong class="trybe">TRYBE</strong>
+        </h3>
     </body>
 </html>
