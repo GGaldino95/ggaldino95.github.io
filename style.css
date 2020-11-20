@@ -1,36 +1,79 @@
 body {
     font-family: 'Goldman', Verdana, Tahoma;
     background-color:rgb(34, 32, 33);
-    color:rgb(136, 139, 140);    
+    color:rgb(136, 139, 140);   
 }
 
-h1, h5 {
-    text-align: center;
-}gi
-
-h2 {
-   color: rgb(195, 156, 80); 
-}
-
-img {
-    border: 3px solid rgb(195, 156, 80);
-    border-radius: 5%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+hr {
+    width: 100%;
+    border-color:rgb(176, 203, 212);
 }
 
 li, a {
     color:rgb(176, 203, 212);
 }
 
-.box {
+.sidebar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 275px;
+    border-right: 3px solid rgb(176, 203, 212);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color:rgb(45, 46, 62);
+    z-index: 1;
+    overflow: hidden;
+}
+
+#sidebar-title {
+    text-align: center;
+    margin-bottom: 2px;
+}
+
+#sidebar-subtitle {
+    text-align: center;
+    margin-top: 0px;
+}
+
+#myName {
+    text-align: center;
+}
+
+#profile-img {
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    width: 225px;
+    border: 3px solid rgb(176, 203, 212);
+    border-radius: 5%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sidebar-content {
+    font-size: 30px;
+    text-align: center;
+}
+
+.main-content {
+    margin-left: 300px;
+}
+
+.skills-content {
     background-color: rgb(45, 46, 62);
-    margin-right: 850px;
-    margin-left: 50px;
-    padding-left: 15px;
+    max-width: 370px;
+    padding: 5px 20px;
+    border: 3px solid rgb(176, 203, 212);
+    border-radius: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .trybe {
     color:rgb(15, 163, 107);
+}
+
+.footer {
+    margin-top: 68px;
 }
 
 #gray {
@@ -43,8 +86,3 @@ li, a {
     font-weight: 400;
 }
 
-.centered {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-}
